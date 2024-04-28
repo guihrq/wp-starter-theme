@@ -1,0 +1,42 @@
+{
+  "name": "wp-starter-theme",
+  "version": "1.0.0",
+  "description": "A developer-first Wordpress theme boilerplate",
+  "main": "public/js/script.js",
+  "scripts": {
+    "dev": "concurrently \"webpack --mode development --watch\" \"sass ./src/assets/styles/style.scss ./public/css/style.css --style=expanded --no-source-map --watch \" ",
+    "build": "webpack --mode production && sass ./src/assets/styles/style.scss ./public/css/style.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbfraphael/wp-starter-theme.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "blog",
+    "website"
+  ],
+  "author": "RBFraphael",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rbfraphael/wp-starter-theme/issues"
+  },
+  "homepage": "https://github.com/rbfraphael/wp-starter-theme#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "aos": "^2.3.4",
+    "axios": "^1.6.7",
+    "bootstrap": "^5.3.2",
+    "flickity": "^3.0.0",
+    "imask": "^7.4.0",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "sass": "^1.70.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.90.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

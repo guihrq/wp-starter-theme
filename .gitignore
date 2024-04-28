@@ -1,0 +1,9 @@
+.parcel-cache/
+node_modules/
+vendor/
+package-lock.json
+composer.lock
+public/css/*
+!public/css/.gitkeep
+public/js/*
+!public/js/.gitkeep
